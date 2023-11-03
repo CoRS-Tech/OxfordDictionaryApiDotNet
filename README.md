@@ -3,7 +3,7 @@ An unofficial wrapper for the Oxford Languages API
 
 It only takes a few lines of code to retrieve a definition:
 
-1) First, obtain your App Key and App Token from [https://developer.oxforddictionaries.com/](here).
+1) First, obtain your App Key and App Token from https://developer.oxforddictionaries.com/.
 2) Install the library using the Nuget Package Manager or by downloading this repository.
 3) Initialise the main client:
 
@@ -31,4 +31,4 @@ var definition = entry.FindFirstDefinition();
 # Understanding the Oxford Dictionaries API
 Please note that this is not a straightforward, one-size-fits-all dictionary. A single entry can provide a wealth of data, which may initially seem confusing.
 While I have tried to provide some guidance in my XML comments, for a more in-depth understanding of how the Oxford Dictionaries API works,
-I recommend visiting their official documentation: [https://developer.oxforddictionaries.com/documentation](here).
+I recommend visiting their official documentation: https://developer.oxforddictionaries.com/documentation.
