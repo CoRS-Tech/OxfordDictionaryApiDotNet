@@ -1,4 +1,4 @@
-﻿namespace OxfordDictionaryApiRapper
+﻿namespace OxfordDictionaryApiDotNet
 {
     public class OxfordDictionaryClientConfig
     {

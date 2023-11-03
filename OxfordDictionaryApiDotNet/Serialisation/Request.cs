@@ -1,10 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
-using OxfordDictionaryApiRapper.Api;
-using OxfordDictionaryApiRapper.Serialisation.LexicalEntries.Entries;
+using OxfordDictionaryApiDotNet.Api;
+using OxfordDictionaryApiDotNet.Serialisation.LexicalEntries.Entries;
 
-namespace OxfordDictionaryApiRapper.Serialisation
+namespace OxfordDictionaryApiDotNet.Serialisation
 {
     public class Request
     {

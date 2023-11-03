@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries.Entries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries.Entries
 {
     public class Pronunciation
     {

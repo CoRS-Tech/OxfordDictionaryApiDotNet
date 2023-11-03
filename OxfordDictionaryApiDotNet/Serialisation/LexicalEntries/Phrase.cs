@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries
 {
     public class Phrase
     {

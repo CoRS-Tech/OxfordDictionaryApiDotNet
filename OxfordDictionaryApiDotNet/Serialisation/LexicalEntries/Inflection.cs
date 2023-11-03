@@ -1,17 +1,17 @@
 ﻿using Newtonsoft.Json;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries
 {
-    public class PhrasalVerb
+    public class Inflection
     {
         /// <summary>
-        /// The ID of this phrasal verb.
+        /// The ID of this inflection.
         /// </summary>
         [JsonProperty("id")]
         public string Id { get; internal set; }
 
         /// <summary>
-        /// Contains the phrasal verb.
+        /// It is the inflection. It is not always different from the original word.
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; internal set; }

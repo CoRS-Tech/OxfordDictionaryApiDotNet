@@ -1,11 +1,10 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
-using System.Text.Json;
 using System.IO;
 using Newtonsoft.Json;
-using OxfordDictionaryApiRapper.Serialisation;
+using OxfordDictionaryApiDotNet.Serialisation;
 
-namespace OxfordDictionaryApiRapper.Api
+namespace OxfordDictionaryApiDotNet.Api
 {
     internal static class ApiRequests
     {

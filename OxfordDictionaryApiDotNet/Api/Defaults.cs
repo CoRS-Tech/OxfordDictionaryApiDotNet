@@ -2,7 +2,7 @@
 
 using System.IO;
 
-namespace OxfordDictionaryApiRapper.Api
+namespace OxfordDictionaryApiDotNet.Api
 {
     internal static class Defaults
     {
@@ -18,7 +18,7 @@ namespace OxfordDictionaryApiRapper.Api
 
         internal const string AppKey = "app_key";
 
-        internal const string NotFound = "Not Found.";
+        internal const string NotFound = "Not found.";
 
         private const string Slash = "/";
 

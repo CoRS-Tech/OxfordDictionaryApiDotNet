@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
-using OxfordDictionaryApiRapper.Api;
+using OxfordDictionaryApiDotNet.Api;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries.Entries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries.Entries
 {
     public class Sense
     {

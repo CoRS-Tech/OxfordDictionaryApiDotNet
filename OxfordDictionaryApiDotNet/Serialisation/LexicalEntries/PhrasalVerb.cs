@@ -1,18 +1,17 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries
 {
-    public class LexicalCategory
+    public class PhrasalVerb
     {
         /// <summary>
-        /// The ID of this lexical category.
+        /// The ID of this phrasal verb.
         /// </summary>
         [JsonProperty("id")]
         public string Id { get; internal set; }
 
         /// <summary>
-        /// The name or text of this lexical category.
+        /// Contains the phrasal verb.
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; internal set; }

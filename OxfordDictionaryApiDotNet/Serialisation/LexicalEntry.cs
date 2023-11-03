@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-using OxfordDictionaryApiRapper.Serialisation.LexicalEntries;
+using OxfordDictionaryApiDotNet.Serialisation.LexicalEntries;
 
-
-namespace OxfordDictionaryApiRapper.Serialisation
+namespace OxfordDictionaryApiDotNet.Serialisation
 {
     public class LexicalEntry
     {

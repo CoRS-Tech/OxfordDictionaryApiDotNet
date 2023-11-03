@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using OxfordDictionaryApiRapper.Api;
-using OxfordDictionaryApiRapper.Serialisation;
+using OxfordDictionaryApiDotNet.Api;
+using OxfordDictionaryApiDotNet.Serialisation;
 
-namespace OxfordDictionaryApiRapper.Clients
+namespace OxfordDictionaryApiDotNet.Clients
 {
     /// <summary>
     /// Standalone entries client. Can be used to retrieve definitions, examples, etymologies, etc. Requires AppId and ApiKey.

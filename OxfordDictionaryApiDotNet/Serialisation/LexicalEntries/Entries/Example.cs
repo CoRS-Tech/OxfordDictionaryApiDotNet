@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries.Entries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries.Entries
 {
     public class Example
     {

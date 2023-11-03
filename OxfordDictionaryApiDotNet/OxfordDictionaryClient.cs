@@ -1,6 +1,6 @@
-﻿using OxfordDictionaryApiRapper.Clients;
+﻿using OxfordDictionaryApiDotNet.Clients;
 
-namespace OxfordDictionaryApiRapper
+namespace OxfordDictionaryApiDotNet
 {
     public class OxfordDictionaryClient
     {

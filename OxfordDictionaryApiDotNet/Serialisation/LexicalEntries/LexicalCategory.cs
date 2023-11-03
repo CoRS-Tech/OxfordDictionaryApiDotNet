@@ -1,17 +1,17 @@
 ﻿using Newtonsoft.Json;
 
-namespace OxfordDictionaryApiRapper.Serialisation.LexicalEntries
+namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries
 {
-    public class Inflection
+    public class LexicalCategory
     {
         /// <summary>
-        /// The ID of this inflection.
+        /// The ID of this lexical category.
         /// </summary>
         [JsonProperty("id")]
         public string Id { get; internal set; }
 
         /// <summary>
-        /// It is the inflection. It is not always different from the original word.
+        /// The name or text of this lexical category.
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; internal set; }
