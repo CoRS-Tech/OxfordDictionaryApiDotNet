@@ -19,7 +19,7 @@ namespace OxfordDictionaryApiDotNet.Clients
             _appKey = appKey;
         }
 
-        public async Task<Request> FindLemmaAsync(string query)
+        public async Task<Request?> FindLemmaAsync(string query)
         {
             return await ApiRequests.RequestLemmaAsync(query, _appId, _appKey);
         }

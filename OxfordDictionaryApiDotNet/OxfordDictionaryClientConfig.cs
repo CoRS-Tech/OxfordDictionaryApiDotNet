@@ -2,8 +2,8 @@
 {
     public class OxfordDictionaryClientConfig
     {
-        public string AppId { get; init; }
+        public required string AppId { get; init; }
 
-        public string AppKey { get; init; }
+        public required string AppKey { get; init; }
     }
 }

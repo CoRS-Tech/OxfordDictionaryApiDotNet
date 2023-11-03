@@ -6,18 +6,18 @@ namespace OxfordDictionaryApiDotNet.Serialisation
     public class Result
     {
         [JsonProperty("id")]
-        public string Id { get; internal set; }
+        public string? Id { get; internal set; }
 
         [JsonProperty("language")]
-        public string LanguageCode { get; internal set; }
+        public string? LanguageCode { get; internal set; }
 
         /// <summary>
         /// Contains lexical (linguistic) entries, such as etymologies, senses (definitions) and pronunciations.
         /// </summary>
         [JsonProperty("lexicalEntries")]
-        public List<LexicalEntry> LexicalEntries { get; internal set; }
+        public List<LexicalEntry>? LexicalEntries { get; internal set; }
 
         [JsonProperty("word")]
-        public string Word { get; internal set; }
+        public string? Word { get; internal set; }
     }
 }

@@ -8,7 +8,7 @@ namespace OxfordDictionaryApiDotNet.Api
 {
     internal static class ApiRequests
     {
-        internal static async Task<HttpContent> InternalRequestAsync(string url, string appId, string appKey, string query)
+        internal static async Task<HttpContent?> InternalRequestAsync(string url, string appId, string appKey, string query)
         {
             var client = new HttpClient();
 
@@ -17,13 +17,10 @@ namespace OxfordDictionaryApiDotNet.Api
 
             var req = await client.GetAsync(url);
 
-            if (!req.IsSuccessStatusCode)
-                return default;
-
-            return req.Content;
+            return !req.IsSuccessStatusCode ? default : req.Content;
         }
 
-        internal static async Task<Request> RequestEntryAsync(string query, string appId, string appKey)
+        internal static async Task<Request?> RequestEntryAsync(string query, string appId, string appKey)
         {
             var url = Path.Combine(Defaults.EntriesEndpoint, query);
             var req = await InternalRequestAsync(url, appId, appKey, query);
@@ -35,7 +32,7 @@ namespace OxfordDictionaryApiDotNet.Api
             return JsonConvert.DeserializeObject<Request>(content);
         }
 
-        internal static async Task<Request> RequestLemmaAsync(string query, string appId, string appKey)
+        internal static async Task<Request?> RequestLemmaAsync(string query, string appId, string appKey)
         {
             var url = Path.Combine(Defaults.LemmasEndpoint, query);
             var req = await InternalRequestAsync(url, appId, appKey, query);

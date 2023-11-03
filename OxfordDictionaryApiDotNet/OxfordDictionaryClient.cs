@@ -18,8 +18,8 @@ namespace OxfordDictionaryApiDotNet
             Lemmas = new LemmasClient(_config.AppId, _config.AppKey);
         }
 
-        public EntriesClient Entries { get; private set; }
+        public EntriesClient? Entries { get; private set; }
 
-        public LemmasClient Lemmas { get; private set; }
+        public LemmasClient? Lemmas { get; private set; }
     }
 }

@@ -18,7 +18,7 @@ namespace OxfordDictionaryApiDotNet.Clients
             _appKey = appKey;
         }
 
-        public async Task<Request> FindEntryAsync(string query)
+        public async Task<Request?> FindEntryAsync(string query)
         {
             return await ApiRequests.RequestEntryAsync(query, _appId, _appKey);
         }

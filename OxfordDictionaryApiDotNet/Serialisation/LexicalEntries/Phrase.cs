@@ -8,12 +8,12 @@ namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries
         /// The ID of this phrase.
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; internal set; }
+        public string? Id { get; internal set; }
 
         /// <summary>
         /// Contains the phrase.
         /// </summary>
         [JsonProperty("text")]
-        public string Text { get; internal set; }
+        public string? Text { get; internal set; }
     }
 }

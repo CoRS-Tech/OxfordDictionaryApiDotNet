@@ -8,12 +8,12 @@ namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries
         /// The ID of this phrasal verb.
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; internal set; }
+        public string? Id { get; internal set; }
 
         /// <summary>
         /// Contains the phrasal verb.
         /// </summary>
         [JsonProperty("text")]
-        public string Text { get; internal set; }
+        public string? Text { get; internal set; }
     }
 }

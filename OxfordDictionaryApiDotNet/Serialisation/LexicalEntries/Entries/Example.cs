@@ -9,12 +9,12 @@ namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries.Entries
         /// The example.
         /// </summary>
         [JsonProperty("text")]
-        public string Text { get; internal set; }
+        public string? Text { get; internal set; }
 
         /// <summary>
         /// Notes this example may have.
         /// </summary>
         [JsonProperty("notes")]
-        public List<ExampleNote> Notes { get; internal set; }
+        public List<ExampleNote>? Notes { get; internal set; }
     }
 }
