@@ -4,7 +4,12 @@ An unofficial wrapper for the Oxford Languages API
 It only takes a few lines of code to retrieve a definition:
 
 1) First, obtain your App Key and App Token from https://developer.oxforddictionaries.com/.
-2) Install the library using the Nuget Package Manager or by downloading this repository.
+   
+2) Install the library:
+Nuget: ```NuGet\Install-Package OxfordDictionaryApiDotNet```
+Project: ```<PackageReference Include="OxfordDictionaryApiDotNet"/>```
+.NET CLI: ```dotnet add package OxfordDictionaryApiDotNet```
+
 3) Initialise the main client:
 
 ```csharp
