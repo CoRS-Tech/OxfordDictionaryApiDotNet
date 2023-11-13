@@ -1,7 +1,7 @@
  # OxfordDictionariesDotNet
 An unofficial .NET package that wraps up the Oxford Languages API.
 
-#Setup
+# Setup
 
 1) First, obtain your App Key and App Token from https://developer.oxforddictionaries.com/.
    
