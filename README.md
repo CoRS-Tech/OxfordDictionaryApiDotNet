@@ -17,7 +17,7 @@ Or simply download this repository from the 'Code' dropdown menu.
 
 # Usage
 
-It only takes 3 lines of code to retrieve a definition:
+It takes just 3 lines of code to retrieve a definition:
 
 1) Use the Entries client to fetch information about a word:
 
