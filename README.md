@@ -1,7 +1,7 @@
 # OxfordDictionariesDotNet
 An unofficial .NET package that wraps up the Oxford Languages API.
 
-It only takes a few lines of code to retrieve a definition:
+#Setup
 
 1) First, obtain your App Key and App Token from https://developer.oxforddictionaries.com/.
    
@@ -13,14 +13,20 @@ Project: ```<PackageReference Include="OxfordDictionaryApiDotNet"/>```
 
 .NET CLI: ```dotnet add package OxfordDictionaryApiDotNet```
 
-4) Use the Entries client to fetch information about a word:
+Or simply download this repository from the 'Code' dropdown menu.
+
+#Usage
+
+It only takes 3 lines of code to retrieve a definition:
+
+1) Use the Entries client to fetch information about a word:
 
 ```csharp
 var entries = new EntriesClient("appId", "appKey");
 var entry = await entries.FindEntryAsync("entanglement");
 ```
 
-5) There are many things a word can return, but you can always use a helper method for convenience:
+2) There are many things a word can return, but you can always use a helper method for convenience:
 
 ```csharp
 var definition = entry.FindFirstDefinition();
@@ -35,7 +41,7 @@ var sense = innerEntry?.Senses?.FirstOrDefault();
 var definition = sense?.Definitions?.FirstOrDefault();
 ```
 
-6) You can also define a main client that houses both the Entries and Lemmas clients:
+3) You can also define a main client that houses both the Entries and Lemmas clients:
 
 ```csharp
 var config = new OxfordDictionaryClientConfig
