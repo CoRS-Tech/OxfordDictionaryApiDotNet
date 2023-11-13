@@ -40,8 +40,8 @@ var definition = sense?.Definitions?.FirstOrDefault();
 ```csharp
 var config = new OxfordDictionaryClientConfig
   {
-    AppKey = "yourAppId",
-    AppToken = "yourAppKey"
+    AppId = "yourAppId",
+    AppKey = "yourAppKey"
   };
 
 var client = new OxfordDictionaryClient(config);
