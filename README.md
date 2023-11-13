@@ -13,21 +13,11 @@ Project: ```<PackageReference Include="OxfordDictionaryApiDotNet"/>```
 
 .NET CLI: ```dotnet add package OxfordDictionaryApiDotNet```
 
-3) Initialise the main client:
-
-```csharp
-var config = new OxfordDictionaryClientConfig
-  {
-    AppKey = "yourAppKey",
-    AppToken = "yourAppToken"
-  };
-
-var client = new OxfordDictionaryClient(config);
-```
 4) Use the Entries client to fetch information about a word:
 
 ```csharp
-var entry = await client.EntriesClient.FindEntryAsync("entanglement");
+var entries = new EntriesClient("appId", "appKey");
+var entry = await entries.FindEntryAsync("entanglement");
 ```
 
 5) There are many things a word can return, but you can always use a helper method for convenience:
@@ -43,6 +33,20 @@ var lexEntry = result?.LexicalEntries?.FirstOrDefault();
 var innerEntry = lexEntry?.Entries?.FirstOrDefault();
 var sense = innerEntry?.Senses?.FirstOrDefault();
 var definition = sense?.Definitions?.FirstOrDefault();
+```
+
+6) You can also define a main client that houses both the Entries and Lemmas clients:
+
+```csharp
+var config = new OxfordDictionaryClientConfig
+  {
+    AppKey = "yourAppKey",
+    AppToken = "yourAppToken"
+  };
+
+var client = new OxfordDictionaryClient(config);
+var entriesClient = client.EntriesClient;
+var lemmasClient = client.LemmasClient;
 ```
 
 # Understanding the Oxford Dictionaries API
