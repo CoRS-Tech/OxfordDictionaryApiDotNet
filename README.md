@@ -8,7 +8,9 @@ It only takes a few lines of code to retrieve a definition:
 2) Install the package:
    
 Nuget: ```NuGet\Install-Package OxfordDictionaryApiDotNet```
+
 Project: ```<PackageReference Include="OxfordDictionaryApiDotNet"/>```
+
 .NET CLI: ```dotnet add package OxfordDictionaryApiDotNet```
 
 3) Initialise the main client:
