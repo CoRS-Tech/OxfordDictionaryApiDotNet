@@ -1,5 +1,5 @@
 # OxfordDictionariesDotNet
-An unofficial .NET wrapper for the Oxford Languages API
+An unofficial .NET package that wraps up the Oxford Languages API.
 
 It only takes a few lines of code to retrieve a definition:
 
