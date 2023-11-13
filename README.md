@@ -1,4 +1,4 @@
-# OxfordDictionariesDotNet
+ # OxfordDictionariesDotNet
 An unofficial .NET package that wraps up the Oxford Languages API.
 
 #Setup
@@ -15,7 +15,7 @@ Project: ```<PackageReference Include="OxfordDictionaryApiDotNet"/>```
 
 Or simply download this repository from the 'Code' dropdown menu.
 
-#Usage
+# Usage
 
 It only takes 3 lines of code to retrieve a definition:
 
