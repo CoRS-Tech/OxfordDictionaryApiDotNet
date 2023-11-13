@@ -35,6 +35,15 @@ var entry = await client.EntriesClient.FindEntryAsync("entanglement");
 ```csharp
 var definition = entry.FindFirstDefinition();
 ```
+The above simplifies the following process:
+
+```csharp
+var result = entry?.Results?.FirstOrDefault();
+var lexEntry = result?.LexicalEntries?.FirstOrDefault();
+var innerEntry = lexEntry?.Entries?.FirstOrDefault();
+var sense = innerEntry?.Senses?.FirstOrDefault();
+var definition = sense?.Definitions?.FirstOrDefault();
+```
 
 # Understanding the Oxford Dictionaries API
 Please note that this is not a straightforward, one-size-fits-all dictionary. A single entry can provide a wealth of data, which may initially seem confusing.
