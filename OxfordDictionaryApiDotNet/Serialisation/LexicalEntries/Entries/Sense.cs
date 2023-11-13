@@ -14,7 +14,7 @@ namespace OxfordDictionaryApiDotNet.Serialisation.LexicalEntries.Entries
         public List<string>? Definitions { get; internal set; }
 
         /// <summary>
-        /// Contains one or multiple definitions this sense may have.
+        /// Contains one or multiple examples this sense may have.
         /// </summary>
         [JsonProperty("examples")]
         public List<Example>? Examples { get; internal set; } = new();
