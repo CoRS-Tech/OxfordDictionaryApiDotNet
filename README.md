@@ -5,7 +5,7 @@ An unofficial .NET package that wraps up the Oxford Languages API.
 
 1) First, obtain your App ID and App Key from https://developer.oxforddictionaries.com/.
 
-Note: On Novemeber 20th, Oxford Dictionaries announced that starting April 1st, 2024, all plans except the Business plan will be discontinued.
+Note: On the 1st of April, 2024, all plans except the Business plan were discontinued.
 
 2) Install the package:
    
