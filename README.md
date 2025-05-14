@@ -58,6 +58,4 @@ var lemmasClient = client.LemmasClient;
 ```
 
 # Understanding the Oxford Dictionaries API
-Please note that this is not a straightforward, one-size-fits-all dictionary. A single entry can provide lots of details, most of which you won't even need.
-While I have tried to provide some guidance in my XML comments, for a more in-depth understanding of how the Oxford Dictionaries API works, and their data structure,
-please visit their official documentation webpage: https://developer.oxforddictionaries.com/documentation.
+To put it simply, the Oxford Languages API is complicated and very branched. It is best if your consult their official documentation to understand the structure behind their entries. Although I've also tried to use XML comments to help out a bit.
