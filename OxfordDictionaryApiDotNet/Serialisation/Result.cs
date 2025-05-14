@@ -12,7 +12,7 @@ namespace OxfordDictionaryApiDotNet.Serialisation
         public string? LanguageCode { get; internal set; }
 
         /// <summary>
-        /// Contains lexical (linguistic) entries, such as etymologies, senses (definitions) and pronunciations.
+        /// Contains lexical and linguistic entries, such as etymologies, senses (definitions) and pronunciations.
         /// </summary>
         [JsonProperty("lexicalEntries")]
         public List<LexicalEntry>? LexicalEntries { get; internal set; }
