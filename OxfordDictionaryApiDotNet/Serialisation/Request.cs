@@ -14,7 +14,7 @@ namespace OxfordDictionaryApiDotNet.Serialisation
         /// <summary>
         /// The results of the request that was made. This contains all the definitions and examples
         /// sorted into a list of categories called lexical categories, where each category has entries,
-        /// and each entries has senses. These senses have their definitions and examples respectively.
+        /// and each entry has senses. These senses will have their own definitions and examples, respectively.
         /// </summary>
         [JsonProperty("results")]
         public List<Result>? Results { get; internal set; }
